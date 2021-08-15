@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "indrev-nikolite",
+  "version": "${version}",
+  "name": "Industrial Revolution: Nikolite Expansion",
+  "description": "Adds nikolite-based blocks to Industrial Revolution.",
+  "authors": [
+    "Luligabi"
+  ],
+  "contact": {
+    "homepage": "dummy",
+    "repo": "dummy",
+    "issues": "dummy"
+  },
+  "license": "Apache-2.0",
+  "icon": "assets/indrev-nikolite/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.luligabi.indrevnikolite.IndrevNikolite"
+    ]
+  },
+  "mixins": [
+    "indrev-nikolite.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "indrev": "*"
+  }
+}
