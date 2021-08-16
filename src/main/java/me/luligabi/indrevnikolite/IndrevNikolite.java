@@ -18,17 +18,17 @@ public class IndrevNikolite implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        registerBlock("nikolite_dust_block", NIKOLITE_DUST_BLOCK);
+        registerBlock("compressed_nikolite_block", COMPRESSED_NIKOLITE_BLOCK);
         registerBlock("nikolite_block", NIKOLITE_BLOCK);
 
-        registerBlock("enriched_nikolite_dust_block", ENRICHED_NIKOLITE_DUST_BLOCK);
+        registerBlock("compressed_enriched_nikolite_block", COMPRESSED_ENRICHED_NIKOLITE_BLOCK);
         registerBlock("enriched_nikolite_block", ENRICHED_NIKOLITE_BLOCK);
     }
 
-    private static final Block NIKOLITE_DUST_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.STONE));
+    private static final Block COMPRESSED_NIKOLITE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.STONE));
     private static final Block NIKOLITE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.STONE));
 
-    private static final Block ENRICHED_NIKOLITE_DUST_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.STONE));
+    private static final Block COMPRESSED_ENRICHED_NIKOLITE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.STONE));
     private static final Block ENRICHED_NIKOLITE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.STONE));
 
 
@@ -39,7 +39,7 @@ public class IndrevNikolite implements ModInitializer {
 
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.create(
                     new Identifier(IndrevNikolite.MOD_ID, "item_group"))
-            .icon(() -> new ItemStack(NIKOLITE_DUST_BLOCK))
+            .icon(() -> new ItemStack(COMPRESSED_NIKOLITE_BLOCK))
             .build();
 
     private static final String MOD_ID = "indrev-nikolite";

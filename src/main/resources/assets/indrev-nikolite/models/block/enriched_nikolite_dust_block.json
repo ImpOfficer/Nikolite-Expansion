@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "indrev-nikolite:block/enriched_nikolite_dust_block"
-  }
-}

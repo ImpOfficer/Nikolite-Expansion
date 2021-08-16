@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "indrev-nikolite:compressed_enriched_nikolite_block"
+    }
+  ],
+  "result": {
+    "item": "indrev:enriched_nikolite_dust",
+    "count": 9
+  }
+}

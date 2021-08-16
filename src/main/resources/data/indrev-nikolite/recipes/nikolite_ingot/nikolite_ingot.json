@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "indrev-nikolite:nikolite_block"
+    }
+  ],
+  "result": {
+    "item": "indrev:nikolite_ingot",
+    "count": 9
+  }
+}

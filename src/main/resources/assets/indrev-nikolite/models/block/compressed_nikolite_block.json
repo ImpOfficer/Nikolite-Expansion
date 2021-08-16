@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "indrev-nikolite:block/compressed_nikolite_block"
+  }
+}
+
