@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "indrev-nikolite:compressed_nikolite_block",
+    "indrev-nikolite:nikolite_block",
+    "indrev-nikolite:compressed_enriched_nikolite_block",
+    "indrev-nikolite:enriched_nikolite_block"
+  ]
+}

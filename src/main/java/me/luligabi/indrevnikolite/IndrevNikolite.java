@@ -4,7 +4,6 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
@@ -25,11 +24,11 @@ public class IndrevNikolite implements ModInitializer {
         registerBlock("enriched_nikolite_block", ENRICHED_NIKOLITE_BLOCK);
     }
 
-    private static final Block COMPRESSED_NIKOLITE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.STONE));
-    private static final Block NIKOLITE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.STONE));
+    private static final Block COMPRESSED_NIKOLITE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().sounds(BlockSoundGroup.STONE));
+    private static final Block NIKOLITE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().sounds(BlockSoundGroup.STONE));
 
-    private static final Block COMPRESSED_ENRICHED_NIKOLITE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.STONE));
-    private static final Block ENRICHED_NIKOLITE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.STONE));
+    private static final Block COMPRESSED_ENRICHED_NIKOLITE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().sounds(BlockSoundGroup.STONE));
+    private static final Block ENRICHED_NIKOLITE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F).requiresTool().sounds(BlockSoundGroup.STONE));
 
 
     private void registerBlock(String identifier, Block block) {
